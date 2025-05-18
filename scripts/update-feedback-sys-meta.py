@@ -51,6 +51,10 @@ print("Modified:", modified)
 print("Renamed:", renamed)
 print("Before dir:", before_dir)
 
+print(modified_file)
+print(all_old_new_renamed_file)
+print(renamed_file)
+
 def remove_meta(doc: str) -> str:
     """
     See issue: https://github.com/squidfunk/mkdocs-material/issues/4179
