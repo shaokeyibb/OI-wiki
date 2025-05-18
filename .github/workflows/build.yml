@@ -81,7 +81,6 @@ jobs:
   update_feedback_sys_meta:
     name: Update OI-Wiki Feedback System Meta
     runs-on: ubuntu-latest
-    if: ${{ github.ref == 'refs/heads/master' }}
     steps:
       - name: Checkout latest
         uses: actions/checkout@v4
