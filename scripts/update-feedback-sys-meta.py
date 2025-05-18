@@ -37,7 +37,7 @@ for f in modified_file:
     if(len(f) > 0):
         modified.append(f)
 
-all_old_new_renamed_file = args["all-old-new-renamed"].read()
+all_old_new_renamed_file = args.__getattr__("all-old-new-renamed").read()
 all_old_new_renamed: list[(str, str)] = []
 for files in all_old_new_renamed_file.split(" "):
     f = files.split(",")
