@@ -80,7 +80,6 @@ jobs:
 
   update_feedback_sys_meta:
     name: Update OI-Wiki Feedback System Meta
-    needs: build
     runs-on: ubuntu-latest
     if: ${{ github.ref == 'refs/heads/master' }}
     steps:
