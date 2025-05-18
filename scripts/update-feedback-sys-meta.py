@@ -44,7 +44,7 @@ for files in all_old_new_renamed_file.split(" "):
     if(len(f) == 2):
         all_old_new_renamed.append((f[0], f[1]))
 renamed_file = args.renamed.read().split(" ")
-renamed: list[(str, str)] = [(old,new) for old, new in all_old_new_renamed if old in modified_file]  
+renamed: list[(str, str)] = [(old,new) for old, new in all_old_new_renamed if old in renamed_file]  
 
 before_dir: str = args.before_dir
 print("Modified:", modified)
